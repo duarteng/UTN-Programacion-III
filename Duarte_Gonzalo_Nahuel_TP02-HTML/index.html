@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page | Formulario</title>
+</head>
+<body>
+
+    <!-- Actividad 2 — Tablas y semántica -->
+    <header>
+        <h1>Landing Page</h1>
+        <nav>
+            <a href="#planes">Planes</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="planes">
+            <h2>Nuestros Planes</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th scope="col">Características</th>
+                        <th scope="col">Plan básico</th>
+                        <th scope="col">Plan Premium</th>
+                        <th scope="col">Plan Familiar</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <!-- Primera fila -->
+                    <tr>
+                        <th scope="row">Descripción</th>
+                        <td>Plan básico para aquellos que recien comienzan</td>
+                        <td>Plan Premium con mejoras, asistencia en linea y más..</td>
+                        <td>Plan Familiar, permite usuarios en diferentes dispositivos.</td>
+                    </tr>
+
+                    <!-- Segunda fila -->
+                    <tr>
+                        <th scope="row">Precio</th>
+                        <td>$ 799 x Mes</td>
+                        <td>$ 1599 x Mes</td>
+                        <td>$ 2599 x Mes</td>
+                    </tr>
+
+                    <!-- Tercera fila -->
+                    <tr>
+                        <th scope="row">Soporte</th>
+                        <td>No tiene</td>
+                        <td>24/7 en linea</td>
+                        <td>Prioritario</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+        <!-- Actividad 1 — Formularios HTML -->
+        <section id="contacto">
+            <h2>Contactanos</h2>
+
+            <form action="#">
+
+                <label for="nombre">Nombre:</label>
+                <input 
+                    type="text" 
+                    id="nombre" 
+                    name="nombre" placeholder="Ej. Pedro" 
+                    required
+                >
+                <br>
+
+                <label for="email">Email:</label>
+                <input 
+                    type="email" 
+                    name="email" 
+                    id="email" 
+                    placeholder="Ej. correo@correo.com" 
+                    required
+                >
+                <br>
+                
+                <br>
+                
+                <label for="opciones">Elegi el tipo de plan:</label><br>
+                <select name="opciones" id="opciones">
+                    <option value="ninguno">--- Seleccioná una opción ---</option>
+                    <option value="basico">Plan Básico</option>
+                    <option value="premium">Plan Premium</option>
+                    <option value="familiar">Plan Familiar</option>
+                </select>
+
+                
+                <fieldset>
+                    <legend>Tipo de Consulta</legend>
+                    
+                    <input 
+                        type="radio" 
+                        name="tipo_consulta" 
+                        id="consulta-general" 
+                        value="Consulta-general"
+                    >
+                    <label for="consulta-general">General</label>
+
+                    <br>
+
+                    <input 
+                        type="radio" 
+                        name="tipo_consulta" 
+                        id="consulta-urgente"
+                        value="Consulta-urgente"
+                    >
+                    <label for="consulta-urgente">Urgente</label>
+                </fieldset>
+                <br>
+
+                <label for="mensaje">Dejanos tu mensaje:</label>
+                <br>
+                <textarea 
+                    name="mensaje" 
+                    id="mensaje" 
+                    rows="4" cols="60" 
+                    placeholder="Ingresa tu mensaje.."
+                ></textarea>
+                <br>
+
+                <input type="checkbox" name="terminos" id="terminos" required>
+                <label for="terminos">Acepto los terminos y condiciones.</label>
+                <br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Footer de la Pagina &copy;</p>
+    </footer>
+</body>
+</html>
