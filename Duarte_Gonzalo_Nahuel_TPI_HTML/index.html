@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Food Store | Catálogo</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Food Store</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Inicio</a>
+                </li>
+
+                <li>
+                    <a href="#">Mis Pedidos</a>
+                </li>
+                
+                <li>
+                    <a href="#">Carrito</a>
+                </li>
+                
+                <li>
+                    <a href="admin.html">Panel Admin</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <aside>
+        <h3>Categorías</h3>
+        <ul>
+            <li><a href="#">Todas</a></li>
+            <li><a href="#">Hamburguesas</a></li>
+            <li><a href="#">Pizzas</a></li>
+            <li><a href="#">Papas Fritas</a></li>
+            <li><a href="#">Bebidas</a></li>
+        </ul>
+    </aside>
+
+    <main>
+        
+        <!-- Formulario de Busqueda -->
+        <form action="#">
+            <label for="buscar-productos">Buscar Productos:</label>
+            <input 
+                type="text" 
+                id="buscar-productos" 
+                name="buscar-productos" 
+                placeholder="Ej: Hamburguesa con cheddar"
+            >
+
+            <button type="submit">Buscar</button>
+        </form>
+
+        <h2>Productos Destacados</h2>
+        
+        <!-- Productos Destacados 1 -->
+        <article>
+            <img src="/assets/hamburguesa_cheddar.jpg" width="270" height="200" alt="Imagen Hamburguesa">
+
+            <h3>Hamburguesa Mega Boom</h3>
+
+            <p>Mega hamburguesa con dos medallones de carne y exceso de cheddar.</p>
+
+            <p>Precio: <strong>$ 22.000.-</strong></p>
+            
+            <button>Ver Detalles</button>
+            <button>Agregar al carrito</button>
+        </article>
+
+        <!-- Productos Destacados 2 -->
+        <article>
+            <img src="/assets/cocacola.jpg" width="270" height="250" alt="Imagen Coca-cola">
+
+            <h3>Coca-cola Lata</h3>
+
+            <p>Coca-cola en lata de 350ml. Sabor Original</p>
+
+            <p>Precio: <strong>$ 1.200.-</strong></p>
+            
+            <button>Ver Detalles</button>
+            <button>Agregar al carrito</button>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Food Store. Todos los derechos reservados.</p>
+
+        <p>Contacto: <a href="mailto:info@foodstore.com">info@foodstore.com</a></p>
+    </footer>
+</body>
+</html>

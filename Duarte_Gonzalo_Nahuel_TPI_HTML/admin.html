@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Store | Panel de Administración</title>
+</head>
+<body>
+    <header>
+        <h1>Panel de Administración</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Volver a la Tienda</a></li>
+                <li><a href="#">Cerrar Sesión</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <hr>
+
+    <h2>Gestión de Productos</h2>
+
+    <button>+ Nuevo Producto</button>
+
+    <main>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Categoría</th>
+                    <th>Precio</th>
+                    <th>Stock</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <!-- Fila 1 -->
+                <tr>
+                    <td>1</td>
+                    <td>
+                        <img 
+                            src="/assets/hamburguesa_cheddar.jpg" 
+                            alt="Imagen Hamburguesa"
+                            width="50"
+                            height="40"
+                        >
+                    </td>
+                    <td>Hamburguesa Mega Boom</td>
+                    <td>Hamburguesas</td>
+                    <td>$ 22.000.-</td>
+                    <td>57</td>
+                    <td><a href="#">Editar</a> | <a href="#">Eliminar</a></td>
+                </tr>
+
+                <!-- Fila 2 -->
+                <tr>
+                    <td>2</td>
+                    <td>
+                        <img 
+                            src="/assets/cocacola.jpg" 
+                            alt="Imagen Coca-cola"
+                            width="50"
+                            height="50"
+                        >
+                    </td>
+                    <td>Coca-cola Lata</td>
+                    <td>Bebidas</td>
+                    <td>$ 1.200.-</td>
+                    <td>30</td>
+                    <td><a href="#">Editar</a> | <a href="#">Eliminar</a></td>
+                </tr>
+
+                <!-- Fila 3 -->
+                <tr>
+                    <td>3</td>
+                    <td>
+                        <img 
+                            src="/assets/papas_fritas.jpg" 
+                            alt="50x50"
+                            width="50"
+                            height="50"
+                        >
+                    </td>
+                    <td>Papas Fritas</td>
+                    <td>Papas Fritas</td>
+                    <td>$ 1.200.-</td>
+                    <td>0</td>
+                    <td><a href="#">Editar</a> | <a href="#">Eliminar</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <details>
+            <summary>Agregar Producto Rápido</summary>
+
+            <form action="#">
+                <br><label for="nombre-producto">Nombre del Producto:</label><br>
+                <input 
+                    type="text" 
+                    name="nombre-producto" 
+                    id="nombre-producto" 
+                    placeholder="Ej: Lomito Completo"
+                    required
+                ><br>
+
+                <br><label for="precio-producto">Precio:</label><br>
+                <input 
+                    type="number" 
+                    name="precio-producto" 
+                    id="precio-producto" 
+                    required
+                ><br>
+
+                <br><label for="stock-producto">Stock Inicial:</label><br>
+                <input 
+                    type="number" 
+                    name="stock-producto" 
+                    id="stock-producto" 
+                    required
+                ><br>
+
+                <br><label for="categoria-producto">Categoría:</label><br>
+                <select name="categoria-producto" id="categoria-producto" required>
+                    <option value="">--- Seleccione una opción ---</option>
+                    <option value="hamburguesas">Hamburguesas</option>
+                    <option value="bebidas">Bebidas</option>
+                    <option value="papas">Papas Fritas</option>
+                </select><br>
+                
+                <br><label for="descripcion-producto">Descripción:</label><br>
+                <textarea 
+                    name="descripcion-producto" 
+                    id="descripcion-producto" 
+                    placeholder="Ingresa una descripcion para el producto.." 
+                    rows="5"
+                    cols="60"
+                    required
+                ></textarea><br>
+
+                <br><button type="submit">Guardar Producto</button><br>
+            </form>
+        </details>
+    </main>
+
+    <footer>
+        <p>Panel de Administración - Food Store v1.0</p>
+    </footer>
+</body>
+</html>
