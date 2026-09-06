@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 1.5rem;
+}
+
+#personajes {
+    /* TODO: display grid con grid-template-columns y gap */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.personaje-card {
+    /* TODO: background-color, border-radius, padding, text-align */
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.personaje-card h2 {
+    text-align: center;
+}
